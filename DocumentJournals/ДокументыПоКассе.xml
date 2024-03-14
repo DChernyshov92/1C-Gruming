@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<DocumentJournal uuid="fee31f28-c71a-4bd8-af86-ab236a98faff">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ДокументыПоКассе" category="Selection">
+				<xr:TypeId>30116304-58d5-4bf3-8581-3ae1ba9e6d9a</xr:TypeId>
+				<xr:ValueId>7ae41a99-e84e-4d0c-8b57-44ef43e2e169</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ДокументыПоКассе" category="List">
+				<xr:TypeId>03cf2fe6-37b1-4386-9c7e-99b723abff17</xr:TypeId>
+				<xr:ValueId>a14e358f-f424-406c-b99c-c7cecd3dd70c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ДокументыПоКассе" category="Manager">
+				<xr:TypeId>55edfc41-dcaa-41e3-9de0-b0cbc7690040</xr:TypeId>
+				<xr:ValueId>c2754404-fd12-4f77-80cf-2ddcbc6133dd</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ДокументыПоКассе</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы по кассе</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.ДокументыПоКассе.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасходДенежныхСредств</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="ab688f1d-ffd7-489d-a938-8782b3f95dcd">
+				<Properties>
+					<Name>ВидОперации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид операции</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходДенежныхСредств.Attribute.ВидОперации</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДенежныхСредств.Attribute.ВидОперации</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="d7fec2f2-ab74-4151-a15f-a43c09c41a66">
+				<Properties>
+					<Name>Приход</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приход</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДенежныхСредств.Attribute.СуммаДокумента</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="139f9a5b-5a08-4ace-a813-56040ab8dcbe">
+				<Properties>
+					<Name>Расход</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расход</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходДенежныхСредств.Attribute.СуммаДокумента</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="13d07ba8-ecbc-4cbf-a02e-d66137f29180">
+				<Properties>
+					<Name>Контрагент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДенежныхСредств.Attribute.Плательщик</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходДенежныхСредств.Attribute.Получатель</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="4190be73-0139-42dc-9ed4-ace327e61ae1">
+				<Properties>
+					<Name>Касса</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Касса</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДенежныхСредств.Attribute.Касса</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходДенежныхСредств.Attribute.Касса</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="92b131dd-4151-40f2-a838-8b46aa243e76">
+				<Properties>
+					<Name>Комментарий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДенежныхСредств.Attribute.Комментарий</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходДенежныхСредств.Attribute.Комментарий</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="5e1d6861-45f3-41ee-a3f0-d24ac9d1f944">
+				<Properties>
+					<Name>АвторДокумента</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор документа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДенежныхСредств.Attribute.АвторДокумента</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходДенежныхСредств.Attribute.АвторДокумента</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>
